@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vintage2"
+    tools:context=".consultar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRUD"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:textColor="@color/design_default_color_on_primary"
+            android:background="#EDA7C0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Consultar Usuario"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textSize="40dp"
+            android:fontFamily="casual"
+            android:textColor="#7AB197" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/tilID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el ID"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#B5945A"
+                android:minHeight="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/cardview_light_background">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Buscar Registro"
+            android:backgroundTint="#C395DF"
+            android:onClick="consultar"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/tilNombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tietNombre"
+                android:hint="Nombre"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="#B5945A"
+                android:minHeight="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/cardview_light_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilDomicilio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tietDomicilio"
+                android:hint="Domicilio"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="#B5945A"
+                android:minHeight="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_light_background"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tietEmail"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="#B5945A"
+                android:minHeight="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_light_background"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tietPassword"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColorHint="#B5945A"
+                android:minHeight="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_light_background"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ACTUALIZAR REGISTRO"
+            android:backgroundTint="#C9F180"
+            android:layout_marginTop="30dp"
+            android:onClick="actualizarUsuario"/>
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="ELIMINAR REGISTRO"
+            android:backgroundTint="#FBA286"
+            android:onClick="eliminarUsuario"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
