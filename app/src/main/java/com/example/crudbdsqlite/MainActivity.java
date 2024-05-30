@@ -1,7 +1,7 @@
 package com.example.crudbdsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//otro
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
